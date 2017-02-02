@@ -1,6 +1,11 @@
 # vim-setup
 
-This is my vim setup
+This is my vim setup.
+
+The easiest way to set up the .vimrc on the local machine is to:
+
+1. Clone this repo
+2. Create a symlink in the root directory to the vimrc in this repo
 
 The following plugins are required:
 
