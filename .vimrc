@@ -12,8 +12,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'git://valloric.github.io/YouCompleteMe/'
-
+Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 
 set number
@@ -43,9 +42,10 @@ nnoremap <F5> :GundoToggle<CR>
 nmap ;o o<Esc>k
 nmap ;O O<Esc>j
 
-nmap <F3> :NERDTree<CR>
-nmap <F2> :NERDTreeClose<CR>
-autocmd VimEnter * NERDTree
+"nmap <F3> :NERDTree<CR>
+nmap <F2> :NERDTreeToggle<CR>
+"automatically open Nerdtree on opening vim
+"autocmd VimEnter * NERDTree
 "autocmd VimEnter * wincmd p
 
 " Press Space to turn off highlighting and clear any message already
