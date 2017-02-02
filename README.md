@@ -18,6 +18,7 @@ The following plugins are required:
   - Most 
 - YouCompleteMe
   - Have to run some extra scripts (on youcompleteme website) for these to work
+  - Their website says that this works best using MacVim, but I haven't run into issues using regular vim on command line
 - vim-colors-solarized
   - For a nice vim color scheme
 - Powerline
