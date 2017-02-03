@@ -26,7 +26,7 @@ The easiest way to set up the ``.vimrc`` on the local machine is to:
   - To install, assuming fonts are installed, just run ``pip install --user powerline-status``
 - [NERDCommenter] (https://github.com/scrooloose/nerdcommenter)
   - to easily comment lines
-- [NERDTree] https://github.com/scrooloose/nerdtree)
+- [NERDTree] (https://github.com/scrooloose/nerdtree)
   - to display the file tree
 - [Gundo] (https://github.com/sjl/gundo.vim)
   - To display the undo tree
