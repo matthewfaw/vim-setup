@@ -33,4 +33,4 @@ The following plugins are required:
 The following plugins aren't required, but are quite nice to have:
 
 - jiangmiao/auto-pairs - https://github.com/jiangmiao/auto-pairs
-  - A nice plugin for auto-closing brackets.  Works quite nicely
+  - A nice plugin for auto-closing brackets
