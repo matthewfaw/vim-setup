@@ -29,3 +29,8 @@ The following plugins are required:
   - to display the file tree
 - Gundo
   - To display the undo tree
+
+The following plugins aren't required, but are quite nice to have:
+
+- jiangmiao/auto-pairs
+  - A nice plugin for auto-closing brackets.  Works quite nicely
