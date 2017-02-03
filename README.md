@@ -18,7 +18,8 @@ The following plugins are required:
   - Most plugins recommend this
 - YouCompleteMe - https://valloric.github.io/YouCompleteMe/
   - Have to run some extra scripts (on youcompleteme website) for these to work
-  - Their website says that this works best using MacVim, but I haven't run into issues using regular vim on command line
+  - You'll want to use MacVim for this to work
+    - Once you ``brew install macvim``, you can alias vim as ``mvim -v`` so that your default terminal vim is MacVim, without the GUI
 - vim-colors-solarized - https://github.com/altercation/vim-colors-solarized
   - For a nice vim color scheme
 - Powerline - https://github.com/powerline/powerline
