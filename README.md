@@ -35,3 +35,5 @@ The easiest way to set up the ``.vimrc`` on the local machine is to:
 
 - [jiangmiao/auto-pairs] (https://github.com/jiangmiao/auto-pairs)
   - A nice plugin for auto-closing brackets
+- [vimtex] (https://github.com/lervag/vimtex)
+  - Easily compile/load pdf/clean directory for Latex
