@@ -5,37 +5,35 @@ filetype off
 
 "Vundle package manager
 set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=/usr/local/opt/fzf
 call vundle#begin()
-
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 
+Plugin 'micha/vim-colors-solarized'
+
 Plugin 'lervag/vimtex'
 
 Plugin 'jiangmiao/auto-pairs'
 
 Plugin 'ervandew/supertab'
-"Plugin 'Valloric/YouCompleteMe'
+
+Plugin 'preservim/nerdcommenter'
+Plugin 'preservim/nerdtree'
+
+Plugin 'junegunn/fzf.vim'
 call vundle#end()
 
-"Pathogen package manager
-execute pathogen#infect()
-syntax on filetype plugin indent on
+syntax on
+filetype plugin indent on
 
 "Setup NerdTree for file tree navigation
 nmap <F2> :NERDTreeToggle<CR>
 "automatically open Nerdtree on opening vim
 autocmd VimEnter * NERDTree
-
-"Search highlighting on/off
-" Press Space to turn off highlighting and clear any message already
-" displayed.
-:nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
-" Press F4 to toggle highlighting on/off, and show current value.
-:noremap <F4> :set hlsearch! hlsearch?<CR>
 
 "Settings for vimtex
 let g:vimtex_view_method = 'skim'
@@ -57,7 +55,10 @@ set laststatus=2
 set showtabline=2
 set noshowmode
 
-noremap <Leader>a :Ack <cword><cr>
+"Shortcuts for searching for files and text using fzf.vim
+"noremap <Leader>a :Ack <cword><cr>
+noremap <Leader>f :Files<CR>
+noremap <Leader>a :Ag<CR>
 
 "nnoremap <F5> :GundoToggle<CR>
 
@@ -79,7 +80,7 @@ noremap <Leader>a :Ack <cword><cr>
 """"""""""""""""""" Vim configs """"""""""""""""""""""
 
 "Allow click navigation
-set mouse=a
+"set mouse=a
 "Add line numbers
 set number
 set relativenumber
@@ -110,3 +111,11 @@ set listchars=tab:>-
 "Insert newline above/below cursor without entering insert mode
 nmap ;o o<Esc>k
 nmap ;O O<Esc>j
+
+"Search highlighting on/off
+" Press Space to turn off highlighting and clear any message already
+" displayed.
+:nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+" Press F4 to toggle highlighting on/off, and show current value.
+:noremap <F4> :set hlsearch! hlsearch?<CR>
+
