@@ -37,3 +37,11 @@ The easiest way to set up the ``.vimrc`` on the local machine is to:
   - A nice plugin for auto-closing brackets
 - [vimtex](https://github.com/lervag/vimtex)
   - Easily compile/load pdf/clean directory for Latex
+  - Note: To compile multi-file project, specify main file using an indicator
+    file <name of main file WITHOUT .tex>.latexmain
+  - This config also depends on Skim PDF viewer. To configure this viewer, go
+    to Preferences > Sync, check the boxes, select custom Preset, set as
+    command ``nvr`` and Arguments ``--servername /tmp/nvimserver
+    --remote-silent %file -c %line`` to enable backwards search
+  - I use neovim for my vim editor. To run it, I call: ``nvim -u ~/.vimrc
+    --listen /tmp/nvimserver``

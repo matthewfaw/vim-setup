@@ -13,7 +13,10 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 
+Plugin 'lervag/vimtex'
+
 Plugin 'jiangmiao/auto-pairs'
+
 Plugin 'ervandew/supertab'
 "Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
@@ -34,6 +37,10 @@ autocmd VimEnter * NERDTree
 " Press F4 to toggle highlighting on/off, and show current value.
 :noremap <F4> :set hlsearch! hlsearch?<CR>
 
+"Settings for vimtex
+let g:vimtex_view_method = 'skim'
+let g:vimtex_latexmk_progname = 'nvr'
+let g:tex_flavor = 'latex'
 
 "Nice appearances
 set background=dark
@@ -41,16 +48,6 @@ set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
 
-"Configures status line -- just for nice appearances
-" Powerline
-"python3 from powerline.vim import setup as powerline_setup
-"python3 powerline_setup()
-"python3 del powerline_setup
-"let g:Powerline_symbols = 'fancy'
-"set laststatus=2
-"set showtabline=2
-"set noshowmode
-"
 " Powerline alternative: vim-airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -60,7 +57,7 @@ set laststatus=2
 set showtabline=2
 set noshowmode
 
-"noremap <Leader>a :Ack <cword><cr>
+noremap <Leader>a :Ack <cword><cr>
 
 "nnoremap <F5> :GundoToggle<CR>
 
