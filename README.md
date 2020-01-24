@@ -14,7 +14,6 @@ and ``alias vim="nvim -u ~/.vimrc --listen $NVIM_LISTEN_ADDRESS"``
 5. Open vim, and install all packages using: ``:VundleInstall``
 6. Install [Skim](https://skim-app.sourceforge.io/) pdf viewer.
 7. Set up Skim for backwards search for LaTeX: go to Preferences > Sync, then
-   check boxes for ``Check for file changes`` and ``Reload automatically``, and
    under PDF-TeX support, choose ``Preset: custom``, ``command: nvr``, and
    arguments ``--servername /tmp/nvimserver --remote-silent %file -c %line``
 
