@@ -11,9 +11,10 @@ then add the following lines to your ``.zshrc``
 file: ``export NVIM_LISTEN_ADDRESS=/tmp/nvimserver`` 
 and ``alias vim="nvim -u ~/.vimrc --listen $NVIM_LISTEN_ADDRESS"``
 4. Install needed packages for fzf: ``brew install the_silver_searcher fzf``
-5. Open vim, and install all packages using: ``:VundleInstall``
-6. Install [Skim](https://skim-app.sourceforge.io/) pdf viewer.
-7. Set up Skim for backwards search for LaTeX: go to Preferences > Sync, then
+5. Install [Vundle](https://github.com/VundleVim/Vundle.vim) using ``git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim``
+6. Open vim, and install all packages using: ``:VundleInstall``
+7. Install [Skim](https://skim-app.sourceforge.io/) pdf viewer.
+8. Set up Skim for backwards search for LaTeX: go to Preferences > Sync, then
    under PDF-TeX support, choose ``Preset: custom``, ``command: nvr``, and
    arguments ``--servername /tmp/nvimserver --remote-silent %file -c %line``
 
