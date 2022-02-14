@@ -5,10 +5,10 @@ This is my vim setup.
 Here's how to get started:
 
 1. If setting up a new environment:
-   - Setup [Oh My Zsh](https://ohmyz.sh/#install) to make the shell look nice
+   - Setup [Oh My Zsh](https://ohmyz.sh/#install) to make the shell look nice. I tend to like the ``ZSH_THEME="bira"`` setting.
    - Install [``powerline-fonts``](https://github.com/powerline/fonts) using the instructions linked in that repo. Note that, if using iTerm2, need to set both the Regular font and the Non-ASCII Font in "iTerm > Preferences > Profiles > Text" to use a patched font (Meslo LG M Bold for Powerline), per [this issue](https://github.com/powerline/fonts/issues/44).
-   - It's nice to use the [``z command``](https://github.com/agkozak/zsh-z). Follow the steup instructions from that repo
-2. Clone this repo
+   - It's nice to use the [``z command``](https://github.com/agkozak/zsh-z). Follow the steup instructions from that repo.
+2. Clone this repo.
 3. Create a symlink in the home directory to the vimrc in this repo using ``ln -s /full/path/to/vimrc ~/.vimrc``, and similarly for ``latexmkrc``.
 4. Set up neovim: ``brew install neovim`` and ``pip3 install neovim-remote``, 
 then add the following lines to your ``.zshrc`` 
